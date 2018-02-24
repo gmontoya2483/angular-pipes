@@ -12,6 +12,7 @@
     </tr>
   </thead>
   <tbody>
+    <!-- Uppercase y lowercase -->
     <tr>
       <td>{{ nombre }}</td>
       <td>uppercase</td>
@@ -23,7 +24,7 @@
       <td>{{ nombre | lowercase}}</td>
     </tr>
 
-
+    <!-- Slice -->
     <tr>
       <td>{{ nombre }}</td>
       <td> slice: 3 </td>
@@ -49,6 +50,7 @@
       </td>
     </tr>
 
+    <!-- Decimal (number) -->
     <tr>
       <td>{{ PI }}</td>
       <td> number </td>
@@ -65,6 +67,7 @@
       <td>{{ PI | number:'1.0-2' }}</td>
     </tr>
 
+    <!-- percent -->
     <tr>
       <td>{{ a }}</td>
       <td> percent </td>
@@ -76,6 +79,7 @@
       <td>{{ a | percent:'2.2-2' }}</td>
     </tr>
 
+    <!-- Currency -->
     <tr>
       <td>{{ salario }}</td>
       <td> currency </td>
@@ -112,6 +116,7 @@
       <td>{{ salario | number:'.2-2' }}</td>
     </tr>
 
+    <!-- json con <pre></pre> -->
     <tr>
       <td>{{ heroe }}</td>
       <td> json </td>
@@ -120,6 +125,18 @@
           {{ heroe | json }}
         </pre>
       </td>
+    </tr>
+
+    <!-- Async -->
+    <tr>
+      <td>{{ valorDePromesa }}</td>
+      <td>  </td>
+      <td>{{ valorDePromesa }}</td>
+    </tr>
+    <tr>
+      <td>{{ valorDePromesa }}</td>
+      <td> async </td>
+      <td>{{ valorDePromesa | async }}</td>
     </tr>
 
 
