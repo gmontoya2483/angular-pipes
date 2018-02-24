@@ -8,7 +8,7 @@ En detalle veremos:
 
 1. Pipes [uppercase](https://angular.io/api/common/UpperCasePipe) y [lowercase](https://angular.io/api/common/LowerCasePipe)
 2. Pipe [Slice](https://angular.io/api/common/SlicePipe)
-3. Pice [Decimal](https://angular.io/api/common/DecimalPipe)
+3. Pipe [Decimal](https://angular.io/api/common/DecimalPipe)
 4. Pipe [Percent](https://angular.io/api/common/PercentPipe)
 5. Pipe [Currency](https://angular.io/api/common/CurrencyPipe)
 6. Pipe [Json](https://angular.io/api/common/JsonPipe)
@@ -45,7 +45,13 @@ registerLocaleData(localeEs);
 export class AppModule { }
 ```
 
-  
+## Screenshots
+
+![Pantalla principal](Documentation/mainscreen1.png)
+![Pantalla principal](Documentation/mainscreen2.png)
+![Pantalla principal](Documentation/mainscreen3.png)
+
+
 ## Referencias Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
