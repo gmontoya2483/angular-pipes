@@ -47,9 +47,9 @@ export class AppModule { }
 
 ## Screenshots
 
-![Pantalla principal](Documentation/mainscreen1.png)
-![Pantalla principal](Documentation/mainscreen2.png)
-![Pantalla principal](Documentation/mainscreen3.png)
+![Pantalla principal](documentation/mainscreen1.png)
+![Pantalla principal](documentation/mainscreen2.png)
+![Pantalla principal](documentation/mainscreen3.png)
 
 
 ## Referencias Angular CLI
