@@ -166,6 +166,22 @@
       <td>{{ fecha | date:'medium':'+0430':'es-AR' }}</td>
     </tr>
 
+    <!--Pipe personalizado -->
+    <tr>
+      <td>{{ nombre2 }}</td>
+      <td> capitalizado </td>
+      <td>{{ nombre2 | capitalizado }}</td>
+    </tr>
+    <tr>
+      <td>{{ nombre2 }}</td>
+      <td> capitalizado:true </td>
+      <td>{{ nombre2 | capitalizado:true }}</td>
+    </tr>
+    <tr>
+      <td>{{ nombre2 }}</td>
+      <td> capitalizado:false </td>
+      <td>{{ nombre2 | capitalizado:false }}</td>
+    </tr>
 
 
   </tbody>
