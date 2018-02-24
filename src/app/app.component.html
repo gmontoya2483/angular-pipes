@@ -139,6 +139,33 @@
       <td>{{ valorDePromesa | async }}</td>
     </tr>
 
+    <!--Date -->
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date </td>
+      <td>{{ fecha | date }}</td>
+    </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date:'medium' </td>
+      <td>{{ fecha | date:'medium' }}</td>
+    </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date:'MMMM - dd' </td>
+      <td>{{ fecha | date:'MMMM - dd' }}</td>
+    </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date:'medium':'':'en-US' </td>
+      <td>{{ fecha | date:'medium':'':'en-US' }}</td>
+    </tr>
+    <tr>
+      <td>{{ fecha }}</td>
+      <td> date:'medium':''+0430'':'en-AR' </td>
+      <td>{{ fecha | date:'medium':'+0430':'es-AR' }}</td>
+    </tr>
+
 
 
   </tbody>

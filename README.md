@@ -6,19 +6,46 @@ A continuación vamos a entrar a profundidad sobre el tema de los PIPES, que no 
 
 En detalle veremos:
 
-1. Pipes uppercase y lowercase
-2. Pipe Slice
-3. Pice Decimal
-4. Pipe Percent
-5. Pipe Currency
-6. Pipe Json
-7. Pipe Async
-8. Pipe Date
+1. Pipes [uppercase](https://angular.io/api/common/UpperCasePipe) y [lowercase](https://angular.io/api/common/LowerCasePipe)
+2. Pipe [Slice](https://angular.io/api/common/SlicePipe)
+3. Pice [Decimal](https://angular.io/api/common/DecimalPipe)
+4. Pipe [Percent](https://angular.io/api/common/PercentPipe)
+5. Pipe [Currency](https://angular.io/api/common/CurrencyPipe)
+6. Pipe [Json](https://angular.io/api/common/JsonPipe)
+7. Pipe [Async](https://angular.io/api/common/AsyncPipe)
+8. Pipe [Date](https://angular.io/api/common/DatePipe)
 9. Pipes personalizados
     * Capitalizar palabras y nombres
     * Creación de un pipe, que permite cargar recursos externos de forma segura.
 
 
+
+### Cambiar pipe de Fecha a español
+
+En la siguiente clase, aprenderemos como funciona el pipe de fecha, pero también una configuración necesaria para cambiarlo a español.
+
+En la última actualización de Angular, ahora es necesario agregar el llamado de una función más... pero aquí les dejo la configuración necesaria en el ```app.module.ts```
+
+```tsScript
+import { BrowserModule } from '@angular/platform-browser';
+import { LOCALE_ID, NgModule } from '@angular/core';
+
+import { AppComponent } from '../src/app/app.component';
+
+import localeEs from '@angular/common/locales/es';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localeEs);
+
+@NgModule({
+ imports: [ BrowserModule ],
+ declarations: [ AppComponent ],
+ providers: [ { provide: LOCALE_ID, useValue: 'es' } ],
+ bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+```
+
+  
 ## Referencias Angular CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
