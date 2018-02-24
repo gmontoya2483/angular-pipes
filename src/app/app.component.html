@@ -183,6 +183,16 @@
       <td>{{ nombre2 | capitalizado:false }}</td>
     </tr>
 
+    <tr>
+      <td>{{ video }}</td>
+      <td>domseguro:'https://www.youtube.com/embed/'</td>
+      <td>
+        <h4>Youtube <small>video</small></h4>
+        <hr>
+        <iframe width="420" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/'" frameborder="0" allowfullscreen></iframe>
+      </td>
+    </tr>
+
     <!--Pipe personalizado mostrar contrasena-->
     <td>{{ nombre }}</td>
     <td>
@@ -200,12 +210,6 @@
 
   </tbody>
 </table>
-
-
-  <!-- Pipe personalizado domseguro-->
-  <h4>Youtube <small>video</small></h4>
-  <hr>
-  <iframe width="420" height="315" [src]="video | domseguro:'https://www.youtube.com/embed/'" frameborder="0" allowfullscreen></iframe>
 
 
 </div>
